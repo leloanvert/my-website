@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>ACCEDE Provence Entrepreneurs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,700&display=swap">
+</head>
+<body>
+    <header>
+            <a href="https://accedeprovence.com/?fbclid=IwAR0sGcgq28kmpmSLK13Q7Zv911_YIuD3-pVNGNeeVDu7wUh0QnKe2oy7S-0" class="btn-blue" target="_blank">Venez découvrir notre site</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#qui-sommes-nous">Qui sommes-nous</a>
+        <a href="#nos-projets">Nos Projets</a>
+        <a href="#partenaires">Partenaires</a>
+        <a href="#newsletter">Newsletter</a>
+    </nav>
+
+    <div id="qui-sommes-nous" class="container-section">
+        <div class="container">
+            <h2>Qui sommes-nous ?</h2>
+            <p>ACCEDE Provence Entrepreneurs est bien plus qu'une simple association étudiante dédiée au développement de l'entrepreneuriat chez les jeunes de la région sud de la France. Nous sommes le reflet de nos valeurs fondamentales qui reposent sur l'inclusion, la diversité, et notre engagement envers l'amélioration de la communauté entrepreneuriale. Notre association célèbre l'innovation, la créativité, et encourage le leadership parmi les jeunes. Ensemble, nous formons une communauté passionnée, déterminée à créer un impact positif et durable dans le monde de l'entrepreneuriat.</p>
+        </div>
+    </div>
+
+    <div id="nos-projets" class="container-section">
+        <div class="container">
+            <h2>Nos Projets</h2>
+            <div class="cards">
+                <div class="card">
+                    <a href="https://accedeprovence.com/le-phare-%C3%A0-marseille" class="site-link" target="_blank"><img src="images/projet1.jpg" alt="Phare de l'Entrepreneuriat français"></a>
+                    <p>- 1500 visiteurs</p>
+                    <p>- Palais de la Bourse </p>
+                    <p>- 27 mars 2024</p>
+                </div>
+                <div class="card">
+                    <a href="https://accedeprovence.com/le-phare-%C3%A0-tunis" class="site-link" target="_blank"><img src="images/projet2.jpg" alt="Phare Tunisie"></a>
+                    <p>- 900 visiteurs</p>
+                    <p>- Palais des sports de Tunis</p>
+                    <p>- 12 avril 2024</p>
+                </div>
+                <div class="card">
+                    <a href="https://accedeprovence.com/le-phare-casablanca" class="site-link" target="_blank"><img src="images/projet3.jpg" alt="Phare Maroc"></a>
+                    <p>- 700 visiteurs</p>
+                    <p>- Salon des expositions de Casablanca</p>
+                    <p>- 10 mai 2024</p>
+                </div>
+                <div class="card">
+                    <a href="https://accedeprovence.com/le-phare-dakar" class="site-link" target="_blank"><img src="images/projet4.jpg" alt="Phare Sénégal"></a>
+                    <p>- 1000 visiteurs</p>
+                    <p>- Musée des civilisations</p>
+                    <p>- 12 mars 2024</p>
+                </div>
+                <div class="card">
+                    <a href="https://accedeprovence.com/cabinet-de-conseil" class="site-link" target="_blank"><img src="images/projet5.jpg" alt="ACCEDE Consulting"></a>
+                    <p>- Plus de 30 études réalisées chaque année</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="partenaires" class="container-section">
+        <div class="container">
+            <h2>Nos Partenaires</h2>
+            <p id="jul">Nous sommes fiers de collaborer avec des partenaires engagés dans le soutien de l'entrepreneuriat et de la jeunesse.</p>
+            <img src="images/Partenaires.png" alt="photo de nos partenaires">
+        </div>
+    </div>
+
+    <div id="newsletter" class="container-section">
+        <div class="container">
+            <h2>Laissez vos coordonnées pour vous abonner à notre newsletter</h2>
+            <form id="newsletterForm">
+                <label for="email">Votre adresse e-mail :</label>
+                <input type="email" id="email" name="email" required>
+                <button type="button" onclick="subscribeNewsletter()">S'abonner</button>
+            </form>
+            <p id="thankYouMessage" style="display: none; color: green; font-weight: bold;">Merci pour votre confiance !</p>
+        </div>
+    </div>
+    <script>
+        function subscribeNewsletter() {
+            document.getElementById("newsletterForm").style.display = "none";
+            document.getElementById("thankYouMessage").style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>
